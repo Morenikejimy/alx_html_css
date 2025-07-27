@@ -1,0 +1,37 @@
+/*
+  This stylesheet contains the positioning rules to create a 
+  three-row layout (header, main, footer) where the main
+  area is split into two columns (article and aside).
+*/
+
+/* 
+  Step 1 & 2: Make the <body> a flex container with its children
+  (<header>, <main>, <footer>) arranged in a column.
+*/
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* 
+  Step 4 & 5: Make the <article> take up 2/3 of the space
+  within <main> and allow it to be scrollable.
+*/
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+/* 
+  Step 4 & 5: Make the <aside> take up 1/3 of the space
+  within <main> and allow it to be scrollable.
+*/
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
