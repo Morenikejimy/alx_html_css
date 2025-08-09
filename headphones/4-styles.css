@@ -207,3 +207,173 @@
     margin: 0;
 }
 
+/* ================================================= */
+/*           CONTACT SECTION  STYLE           */
+/* ================================================= */
+
+/* 1. The main section container */
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+    color: #000000;
+}
+
+/* 2. The header text for "Contact us" */
+.contact-section h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px; /* Space between title and form */
+}
+
+/* 3. The Form Container - This is KEY for centering */
+.contact-form {
+    /* This stops the form from becoming too wide */
+    max-width: 500px; 
+    
+    /* This is the magic that centers the entire form block on the page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 4. The Form Groups (Label + Input) */
+.form-group {
+    /* This ensures the labels and inputs are aligned to the left */
+    text-align: left; 
+    margin-bottom: 40px; /* Space between each form field */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* 5. The Input Fields - This is KEY for the straight lines */
+.form-group input,
+.form-group textarea {
+    /* This makes the input take up the full width of the form container */
+    width: 100%; 
+    
+    border: none;
+    border-bottom: 1px solid #ccc; /* The straight line */
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Change line color on click */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #FF6565;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+/* 6. The Button - Now it will be centered because the form is centered */
+.btn-cta {
+    background-color: #FF6565;
+    color: #ffffff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    
+    /* We add display: block and margin to center it if it's the only thing */
+    /* but because the form itself is centered, this works well */
+    margin-top: 20px;
+}
+
+.btn-cta:hover {
+    opacity: 0.9;
+}
+
+
+/* ========================================= */
+/*              FOOTER STYLES                */
+/* ========================================= */
+
+/* The main footer container */
+.site-footer {
+    background-color: #071629; /* The dark navy color */
+    padding: 80px 0 40px 0; /* Space inside the footer */
+    color: #ffffff;
+}
+
+/* --- Mobile First Layout --- */
+
+/* The top part containing the logo and social icons */
+.footer-top {
+    display: flex;
+    flex-direction: column; /* On mobile, stack them vertically */
+    align-items: center;    /* Center them */
+    gap: 40px; /* Space between logo and social icons */
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    /* We can reuse the logo style, but let's be specific */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* The social media icon links */
+.social-links {
+    display: flex;
+    gap: 20px; /* Space between each icon */
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%; /* This makes the white circles */
+    color: #071629; /* This makes the icon itself dark navy */
+    font-size: 16px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.9;
+}
+
+/* The copyright text at the very bottom */
+.footer-bottom {
+    text-align: center;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5); /* Faded white color for subtlety */
+    font-size: 12px;
+}
+
+
+/* --- Desktop Layout Adjustments --- */
+@media screen and (min-width: 768px) {
+    
+    /* On desktop, we change the layout of the top part */
+    .footer-top {
+        flex-direction: row; /* Put them side-by-side */
+        justify-content: space-between; /* This is the key! Pushes them to opposite ends. */
+    }
+}

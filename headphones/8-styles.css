@@ -1,0 +1,396 @@
+/* ================================================= */
+/*               1. HOME SECTION                     */
+/* ================================================= */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-section {
+    padding: 0px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff; 
+    background-image: url('images/headphones_hero_1.jpg');
+}
+
+
+.home-section nav {
+    padding: 30px;
+    display: flex;  
+}
+
+.home-section nav a {
+    font-size: 15px;
+    font-weight: medium;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    border-bottom: 2x transparent;
+    cursor: default;
+    transition: all .3s linear;
+}
+
+.home-section a:hover {
+    color: #FF6565;
+    border-bottom: 2px;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+      height: 30px;
+    margin-right: 10px;
+}
+
+.home-content {
+ padding: 100px 50px;
+ text-align: center;
+}
+
+.home-content h1 {
+     font-size: 32px; /* Mobile font size */
+     margin-bottom: 10px;
+     font-weight: normal;
+} 
+
+.home-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 40px; 
+}
+
+.home-content a{
+    display: inline-block;
+    background-color: #FF6565;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 60px auto 0 auto;
+}
+
+/* ================================================= */
+/*               WHAT WE DO                */
+/* ================================================= */
+
+ .what-we-do {
+    padding: 80px 0; /* 80px top/bottom, 0 left/right */
+    background-color: #ffffff;
+    color: #000000; /* Set the default text color for this section to black */
+}
+
+ .section-header {
+    text-align: center;
+    margin-bottom: 60px; /* Add space between the header and the features grid */
+}
+
+ .section-header h2 {
+     font-size: 32px;
+     font-weight: bold; /* The heading looks bold in the design */
+}
+
+ .section-header p {
+     font-size: 16px;
+     line-height: 1.6;
+     max-width: 650px; /* This stops the paragraph from being too wide */
+     margin: 20px auto 0 auto; /* Center the paragraph block itself */
+}
+
+.feature-item {
+    display: flex;
+    text-align: center;
+    justify-content: space-between; /* This spreads the 4 items out evenly */
+}
+    
+
+/* Style each of the four feature blocks */
+.feature-item {
+    text-align: center; /* Now we center the text INSIDE each item */
+    
+    /* This tells each item to take up about 1/4 of the available space */
+    flex-basis: 23%; 
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px; /* Add space above the heading */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.feature-item p {
+   font-size: 14px;
+   line-height: 1.5; /* Improves readability */
+   color: #000000;
+}
+.feature-item i {
+    font-size: 50px;      /* Makes the icon large */
+    color: #FF6565;      /* The brand's red color */
+}
+
+
+/* ================================================= */
+/*               OUR RESULTS SECTION   STYLE           */
+/* ================================================= */
+
+.result-section {
+    padding: 100px 0; /* Add space above and below */
+    color: #ffffff; 
+    background-image: url('images/headphones_hero_2.jpg');
+    /* Ensures the image covers the entire section */
+    background-size: cover;
+    /* Centers the image within the section */
+    background-position: center;
+
+}
+
+.result-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 80px auto;
+}
+
+.result-header h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.result-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.pentagon-item {
+    width: 170px;
+    height: 160px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+  /* Use flexbox to center the text inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the text inside the pentagons */
+.pentagon-item h3 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.pentagon-item p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ================================================= */
+/*           CONTACT SECTION  STYLE           */
+/* ================================================= */
+
+/* 1. The main section container */
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+    color: #000000;
+}
+
+/* 2. The header text for "Contact us" */
+.contact-section h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px; /* Space between title and form */
+}
+
+/* 3. The Form Container - This is KEY for centering */
+.contact-form {
+    /* This stops the form from becoming too wide */
+    max-width: 500px; 
+    
+    /* This is the magic that centers the entire form block on the page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 4. The Form Groups (Label + Input) */
+.form-group {
+    /* This ensures the labels and inputs are aligned to the left */
+    text-align: left; 
+    margin-bottom: 40px; /* Space between each form field */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* 5. The Input Fields - This is KEY for the straight lines */
+.form-group input,
+.form-group textarea {
+    /* This makes the input take up the full width of the form container */
+    width: 100%; 
+    
+    border: none;
+    border-bottom: 1px solid #ccc; /* The straight line */
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Change line color on click */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #FF6565;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+/* 6. The Button - Now it will be centered because the form is centered */
+.btn-cta {
+    background-color: #FF6565;
+    color: #ffffff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    
+    /* We add display: block and margin to center it if it's the only thing */
+    /* but because the form itself is centered, this works well */
+    margin-top: 20px;
+}
+
+.btn-cta:hover {
+    opacity: 0.9;
+}
+
+
+/* ========================================= */
+/*              FOOTER STYLES                */
+/* ========================================= */
+
+/* The main footer container */
+.site-footer {
+    background-color: #071629; /* The dark navy color */
+    padding: 80px 0 40px 0; /* Space inside the footer */
+    color: #ffffff;
+}
+
+/* --- Mobile First Layout --- */
+
+/* The top part containing the logo and social icons */
+.footer-top {
+    display: flex;
+    flex-direction: column; /* On mobile, stack them vertically */
+    align-items: center;    /* Center them */
+    gap: 40px; /* Space between logo and social icons */
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    /* We can reuse the logo style, but let's be specific */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* The social media icon links */
+.social-links {
+    display: flex;
+    gap: 20px; /* Space between each icon */
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%; /* This makes the white circles */
+    color: #071629; /* This makes the icon itself dark navy */
+    font-size: 16px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.9;
+}
+
+/* The copyright text at the very bottom */
+.footer-bottom {
+    text-align: center;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5); /* Faded white color for subtlety */
+    font-size: 12px;
+}
+
+
+/* --- Desktop Layout Adjustments --- */
+@media screen and (min-width: 768px) {
+    
+    /* On desktop, we change the layout of the top part */
+    .footer-top {
+        flex-direction: row; /* Put them side-by-side */
+        justify-content: space-between; /* This is the key! Pushes them to opposite ends. */
+    }
+}
+
+/* ================================================= */
+/*           TASK 8: HAMBURGER MENU STYLES           */
+/* ================================================= */
+
+/* Add this to your 8-styles.css */
+.hamburger-menu { /* Styles for the button */ }
+.hamburger-menu span { /* Styles for the lines */ }
+
+@media (max-width: 480px) {
+    .main-nav { /* Same as before, positioned off-screen */ }
+
+    /* This is the key class JS will toggle */
+    body.nav-open .main-nav {
+        transform: translateX(0);
+    }
+}

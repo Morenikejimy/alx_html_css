@@ -207,3 +207,91 @@
     margin: 0;
 }
 
+/* ================================================= */
+/*           CONTACT SECTION  STYLE           */
+/* ================================================= */
+
+/* 1. The main section container */
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+    color: #000000;
+}
+
+/* 2. The header text for "Contact us" */
+.contact-section h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px; /* Space between title and form */
+}
+
+/* 3. The Form Container - This is KEY for centering */
+.contact-form {
+    /* This stops the form from becoming too wide */
+    max-width: 500px; 
+    
+    /* This is the magic that centers the entire form block on the page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 4. The Form Groups (Label + Input) */
+.form-group {
+    /* This ensures the labels and inputs are aligned to the left */
+    text-align: left; 
+    margin-bottom: 40px; /* Space between each form field */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* 5. The Input Fields - This is KEY for the straight lines */
+.form-group input,
+.form-group textarea {
+    /* This makes the input take up the full width of the form container */
+    width: 100%; 
+    
+    border: none;
+    border-bottom: 1px solid #ccc; /* The straight line */
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Change line color on click */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #FF6565;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+/* 6. The Button - Now it will be centered because the form is centered */
+.btn-cta {
+    background-color: #FF6565;
+    color: #ffffff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    
+    /* We add display: block and margin to center it if it's the only thing */
+    /* but because the form itself is centered, this works well */
+    margin-top: 20px;
+}
+
+.btn-cta:hover {
+    opacity: 0.9;
+}
+

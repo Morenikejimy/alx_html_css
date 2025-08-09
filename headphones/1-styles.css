@@ -1,0 +1,148 @@
+/* ================================================= */
+/*               1. HOME SECTION                     */
+/* ================================================= */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-section {
+    padding: 0px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff; 
+    background-image: url('images/headphones_hero_1.jpg');
+}
+
+
+.home-section nav {
+    padding: 30px;
+    display: flex;  
+}
+
+.home-section nav a {
+    font-size: 15px;
+    font-weight: medium;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    border-bottom: 2x transparent;
+    cursor: default;
+    transition: all .3s linear;
+}
+
+.home-section a:hover {
+    color: #FF6565;
+    border-bottom: 2px;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+      height: 30px;
+    margin-right: 10px;
+}
+
+.home-content {
+ padding: 100px 50px;
+ text-align: center;
+}
+
+.home-content h1 {
+     font-size: 32px; /* Mobile font size */
+     margin-bottom: 10px;
+     font-weight: normal;
+} 
+
+.home-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 40px; 
+}
+
+.home-content a{
+    display: inline-block;
+    background-color: #FF6565;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 60px auto 0 auto;
+}
+
+/* ================================================= */
+/*               WHAT WE DO                */
+/* ================================================= */
+
+ .what-we-do {
+    padding: 80px 0; /* 80px top/bottom, 0 left/right */
+    background-color: #ffffff;
+    color: #000000; /* Set the default text color for this section to black */
+}
+
+ .section-header {
+    text-align: center;
+    margin-bottom: 60px; /* Add space between the header and the features grid */
+}
+
+ .section-header h2 {
+     font-size: 32px;
+     font-weight: bold; /* The heading looks bold in the design */
+}
+
+ .section-header p {
+     font-size: 16px;
+     line-height: 1.6;
+     max-width: 650px; /* This stops the paragraph from being too wide */
+     margin: 20px auto 0 auto; /* Center the paragraph block itself */
+}
+
+.feature-item {
+    display: flex;
+    text-align: center;
+    justify-content: space-between; /* This spreads the 4 items out evenly */
+}
+    
+
+/* Style each of the four feature blocks */
+.feature-item {
+    text-align: center; /* Now we center the text INSIDE each item */
+    
+    /* This tells each item to take up about 1/4 of the available space */
+    flex-basis: 23%; 
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px; /* Add space above the heading */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.feature-item p {
+   font-size: 14px;
+   line-height: 1.5; /* Improves readability */
+   color: #000000;
+}
+.feature-item i {
+    font-size: 50px;      /* Makes the icon large */
+    color: #FF6565;      /* The brand's red color */
+}
+
